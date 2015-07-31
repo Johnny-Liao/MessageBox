@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MessageBox</display-name>
+  
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>lsh.messagebox.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MessageServlet</servlet-name>
+    <servlet-class>lsh.messagebox.servlet.MessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowMessage</servlet-name>
+    <servlet-class>lsh.messagebox.servlet.ShowMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NaticeServlet</servlet-name>
+    <servlet-class>lsh.messagebox.servlet.NaticeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowNatice</servlet-name>
+    <servlet-class>lsh.messagebox.servlet.ShowNatice</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageServlet</servlet-name>
+    <url-pattern>/MessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowMessage</servlet-name>
+    <url-pattern>/ShowMessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NaticeServlet</servlet-name>
+    <url-pattern>/NaticeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowNatice</servlet-name>
+    <url-pattern>/ShowNatice</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>login_index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
